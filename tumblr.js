@@ -23,7 +23,7 @@ e.bind(e.EVENT_COMPLETE,function(e){var t=this;$.each(this.getTags(),function(e,
 $(n).appendTo($("ul#tags"))})});e.run()})();
 $(".mobile-nav-panel").click(function(){$(".header-nav.pull-right").toggleClass("active")});
 
-$(".flexslider li").not(".new").remove();
+$(".flexslider li").not(".new").addClass("old");
 $(".flexslider").flexslider({animation:"slide",controlNav:!0,animationLoop:!0,slideshow:!0,slideshowSpeed:6e3});
 $(".share-button .btn").click(function(e){e.stopPropagation();
 $(".share-pulldown").fadeToggle(200)});
